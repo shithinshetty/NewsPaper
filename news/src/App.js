@@ -5,6 +5,8 @@ import React, { Component } from 'react'
 import NavBAr from './components/NavBAr';
 import NEews from './components/Newsitem';
 import Noex from './components/News';
+
+
 import {
   BrowserRouter as Router,
   
@@ -13,12 +15,14 @@ import {
  
 } from "react-router-dom";
 
+
 export default class App extends Component {
   render() {
     return (
       <div>
         <Router>
         <NavBAr/>
+        
         <Routes>
           <Route exact path="/" element ={<Noex key='general' pageSize={5} country="in" category="general"/>}>
           </Route>
